@@ -1,0 +1,66 @@
+package wrq;
+import java.util.Date;
+//字符串
+public class Hello{ 
+	public static void main(String[] args) {
+		//定义字符串
+		String s=new String("good");                  
+		String s1=new String(" good ");
+		String s2=new String("good");
+		
+		//1.正序寻找字符串
+		int a=s.indexOf("g");                         
+		System.out.println(a);
+		
+		//2.倒序寻找字符串
+		int b=s.lastIndexOf("g");                     
+		System.out.println(b);
+		
+		//3.字符串长度
+		int c=s.length();                             
+		System.out.println(c);
+		
+		//4.通过标注寻找字符
+		char d=s.charAt(3);                           
+		System.out.println(d);
+		
+		//5.截取字符串
+		String substr=s.substring(0,3);               
+		System.out.println(substr);
+		
+		//6.去除前后空格
+		String str=s1.trim();                         
+		int e=str.length();
+		int f=s1.length();
+		System.out.println(str+"长度为"+e+"原长为"+f);
+		
+		//7.替换字符串
+		String newstr=s.replace("o","1");                 
+		System.out.println("替换后："+newstr);
+		
+		//8.查看字符串前面
+		boolean a1=s.startsWith("g");                
+		//9.查看字符串后面
+		boolean a2=s.endsWith("s");                  
+		System.out.println(a1);
+		System.out.println(a2);
+		
+		//10.比较字符串是否相等
+		boolean b1=s.equals(s1);                    
+		System.out.println(b1);                   
+		
+		//11.根据字典比较
+		System.out.println(s.compareTo(s2));         
+		
+		//12.将字符串字母换成小写
+		System.out.println(s.toLowerCase());        
+		
+		//13.将字符串字母换成大写
+		System.out.println(s.toUpperCase());        
+		Date date=new Date();
+		
+		//14.格式化
+		String time=String.format("%tc", date);
+		System.out.println(time);
+}
+ }
