@@ -4,6 +4,8 @@ import java.util.Date;
 public class Hello{ 
 	public static void main(String[] args) {
 		//定义字符串
+	        //空格也算字符
+		
 		String s=new String("good");                  
 		String s1=new String(" good ");
 		String s2=new String("good");
@@ -49,7 +51,7 @@ public class Hello{
 		boolean b1=s.equals(s1);                    
 		System.out.println(b1);                   
 		
-		//11.根据字典比较
+		//11.根据字典比较(相等就会输出0)
 		System.out.println(s.compareTo(s2));         
 		
 		//12.将字符串字母换成小写
