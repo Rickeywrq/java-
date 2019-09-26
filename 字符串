@@ -49,10 +49,20 @@ public class Hello{
 		
 		//10.比较字符串是否相等
 		boolean b1=s.equals(s1);                    
-		System.out.println(b1);                   
+		System.out.println(b1);
+		
+		 //字符串比较不分大小写：equelsIgnoreCase
+		 String a="abc";
+		 String b="ABC";
+	         System.out.println(a.equalsIgnoreCase(b));
 		
 		//11.根据字典比较(相等就会输出0)
-		System.out.println(s.compareTo(s2));         
+		System.out.println(s.compareTo(s2));
+		
+		//==比较字符串
+		String a="abc";
+		String b="ABC";
+		System.out.println(a==b);
 		
 		//12.将字符串字母换成小写
 		System.out.println(s.toLowerCase());        
@@ -62,7 +72,6 @@ public class Hello{
 		Date date=new Date();
 		
 		//14.格式化
-		String time=String.format("%tc", date);
-		System.out.println(time);
+		String                                
 }
  }
