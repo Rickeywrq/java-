@@ -1,0 +1,30 @@
+package wrq;
+public class Text1 {
+	//成员变量
+	static int i=47;                              
+	//call方法
+	public void call() {                          
+		System.out.println("调用call()方法");
+		for(int i=0;i<3;i++) {
+			System.out.print(i);
+			if(i==2) {
+				System.out.println("\n");  //换行
+			}
+		}
+	}
+	//定义构造方法  名字与类名一 致
+	public  Text1() {                    
+	}
+	public static void main(String[] agrs) {
+		//创建对象
+		Text1 t1=new Text1();           
+		Text1 t2=new Text1();
+		t2.i=60;
+		System.out.println(t1.i++);
+		//调用方法
+		t1.call();                      
+        t1.i=60;                //重新定义，主函数为主
+		System.out.println(t2.i);
+		t2.call(); 
+	}
+}
